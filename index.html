@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Frontend Developer Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<header class="header">
+  <div class="container nav-container">
+    <h1 class="logo">Rai Salim</h1>
+
+    <nav class="nav">
+      <a href="#home" class="nav-link active">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#skills" class="nav-link">Skills</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section id="home" class="hero">
+  <div class="container">
+    <h2>👋 Hi, I am Rai</h2>
+    <p>Let's unveil how I leverage my Software Engineering skills to solve real world problems.</p>
+    <div class="social-icons">
+        <a href="https://www.linkedin.com/in/rai-salim-391088377/" target="_blank">
+            <i class="fab fa-linkedin"></i>
+        </a>
+
+        <a href="https://github.com/Bigsmall320" target="_blank" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+        </a>
+
+        <a href="mailto:raisalim58@gmail.com" aria-label="Email">
+            <i class="fas fa-envelope"></i>
+        </a>
+        </div>
+
+    <button class="btn-primary" id="ctaBtn">View Projects</button>
+  </div>
+</section>
+
+<section id="about" class="section">
+  <div class="container">
+    <figure class="profile">
+        <img src="src/profile.png" alt="My profile photo">
+        <figcaption>Rai Salim</figcaption>
+    </figure>
+    <h2>About Me</h2>
+    <p>
+      I am a frontend developer focused on building clean UI systems, performant web apps,
+      and interactive user experiences using modern JavaScript.
+    </p>
+  </div>
+</section>
+
+<section id="projects" class="section">
+  <div class="container">
+    <h2>My Projects</h2>
+
+    <!-- Filter Buttons -->
+    <div class="filters">
+      <button onclick="setFilter('all')">All</button>
+      <button onclick="setFilter('JavaScript')">JavaScript</button>
+      <button onclick="setFilter('API')">API</button>
+      <button onclick="setFilter('CSS')">CSS</button>
+    </div>
+
+    <div class="grid"></div>
+  </div>
+</section>
+
+<section id="skills" class="section">
+  <div class="container">
+    <h2>My Skills</h2>
+
+    <div class="skills">
+      <span>HTML5</span>
+      <span>CSS3</span>
+      <span>JavaScript ES6+</span>
+      <span>DOM Manipulation</span>
+      <span>APIs</span>
+      <span>Git & GitHub</span>
+      <span>Basic MYSQL</span>
+      <span>OOP Programming</span>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="section">
+  <div class="container">
+    <h2>Have anything in mind? Get in touch.</h2>
+
+    <form id="contactForm" class="form">
+      <input type="text" placeholder="Name" required />
+      <input type="email" placeholder="Email" required />
+      <textarea rows="5" placeholder="Message" required></textarea>
+      <button class="btn-primary" type="submit">Send Message</button>
+    </form>
+  </div>
+</section>
+
+<footer class="footer">
+  <p>© 2026 DevPortfolio — Vanilla JS Project</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
